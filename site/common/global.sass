@@ -1,0 +1,114 @@
+// sass --watch common/global.sass:common/global.css
+// sass --watch site/common/global.sass:site/common/global.css
+
+$header-item-color: #000000
+$header-item-count: 4
+
+$title-font-family: "Raleway"
+
+body
+	margin: 0
+	background-image: url("img/bg.png")
+	background-position: top
+	background-repeat: no-repeat
+	background-attachment: fixed
+	background-color: #FFFFFF
+a
+	color: black
+	text-decoration: none
+
+	a:hover div.bg, a:focus div.bg
+		background-color: rgba(#000000, 0.25)
+
+p
+	margin: 0px
+	padding: 0px
+	text-align: center
+
+header
+	justify-content: center
+	display: flex
+
+main#adminpage
+
+	form
+		display: flex
+		justify-content: center
+
+		&:hover input
+			background-color: rgba(#000000, 0.10)
+
+		input
+			padding: 10px 5px
+			font-size: 15px
+			border: none
+			background-color: rgba(#000000, 0.05)
+			text-align: center
+			width: 80px
+			margin: 0px
+
+			&:focus
+				outline: none
+
+			&[name="artist"], &[name="title"]
+				width: 175px
+
+			&[type="submit"]
+				cursor: pointer
+			&[name="submit_tracks_delete"]
+				width: 65px
+				&:hover
+					background-color: rgba(#FF0000, 0.4)
+			&[name="submit_tracks_edit"]
+				width: 65px
+				border-left: 1px solid #7c7c7c
+				&:hover
+					background-color: rgba(#0090FF, 0.4)
+			&[name="submit_tracks_add"]
+				width: 130px
+				border-left: 1px solid #7c7c7c
+				&:hover
+					background-color: rgba(#00FF00, 0.4)
+
+// body > main
+// 	display: flex
+// 	justify-content: center
+// 	width: 100%
+//
+// 	div.main.wrapper
+// 		max-width: 1020px
+//
+// 		div.blog.wrapper
+// 			display: flex
+// 			flex-wrap: wrap
+// 			justify-content: center
+//
+// 			div.blog.item
+// 				width: 320px
+// 				height: 500px
+// 				border: 0px solid #444444
+// 				float: left
+// 				margin-left: 10px
+// 				margin-right: 10px
+// 				margin-bottom: 20px
+// 				box-sizing: border-box
+// 				background-color: rgba(#000000, 0.1)
+// 				transition: border-width 100ms ease-in-out, background-color 500ms ease-out
+//
+// 				h2
+// 					font-weight: normal
+// 					font-family: $title-font-family
+// 					margin: 0px 0px
+// 					text-align: center
+// 					font-size: 22px
+// 					padding-top: 8px
+// 					padding-bottom: 8px
+// 					background-color: rgba(#FFFFFF, 0.2)
+//
+// 				p
+// 					margin: 8px 8px
+// 					font-family: sans-serif
+// 					font-size: 16px
+//
+// 			div.blog.item:hover, div.blog.item:focus
+// 				background-color: rgba(#000000, 0.25)

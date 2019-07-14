@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  background-image: url("img/bg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #FFFFFF; }
+
+a {
+  color: black;
+  text-decoration: none; }
+  a a:hover div.bg, a a:focus div.bg {
+    background-color: rgba(0, 0, 0, 0.25); }
+
+p {
+  margin: 0px;
+  padding: 0px;
+  text-align: center; }
+
+header {
+  justify-content: center;
+  display: flex; }
+
+main#adminpage form {
+  display: flex;
+  justify-content: center; }
+  main#adminpage form:hover input {
+    background-color: rgba(0, 0, 0, 0.1); }
+  main#adminpage form input {
+    padding: 10px 5px;
+    font-size: 15px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.05);
+    text-align: center;
+    width: 80px;
+    margin: 0px; }
+    main#adminpage form input:focus {
+      outline: none; }
+    main#adminpage form input[name="artist"], main#adminpage form input[name="title"] {
+      width: 175px; }
+    main#adminpage form input[type="submit"] {
+      cursor: pointer; }
+    main#adminpage form input[name="submit_tracks_delete"] {
+      width: 65px; }
+      main#adminpage form input[name="submit_tracks_delete"]:hover {
+        background-color: rgba(255, 0, 0, 0.4); }
+    main#adminpage form input[name="submit_tracks_edit"] {
+      width: 65px;
+      border-left: 1px solid #7c7c7c; }
+      main#adminpage form input[name="submit_tracks_edit"]:hover {
+        background-color: rgba(0, 144, 255, 0.4); }
+    main#adminpage form input[name="submit_tracks_add"] {
+      width: 130px;
+      border-left: 1px solid #7c7c7c; }
+      main#adminpage form input[name="submit_tracks_add"]:hover {
+        background-color: rgba(0, 255, 0, 0.4); }
+
+/*# sourceMappingURL=global.css.map */
